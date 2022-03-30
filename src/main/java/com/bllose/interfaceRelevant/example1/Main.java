@@ -10,6 +10,10 @@ package com.bllose.interfaceRelevant.example1;
  *      当前用法最大的限制在于 Functional interface, 这导致一次只能有一个方法被指定关联。
  * 3、就lambda表达式而言，他们本质上是相同的， 但是存在如下差异：
  *      1） lambda表达式只能执行一段自定义代码块；而Function interface总体是 总分结构， 并且“自定义代码块”还能利用“自定义方法”中其他的所有资源
+ *
+ * 总结：
+ *      这种编程思维比较适合Adapt。 特别是那种主要逻辑已经被实现，但是由于某些原因并不好继续改造。
+ *      这时候，通过Functional interface嫁接过来， 即不影响原逻辑，又能在新逻辑中享受原代码中的全量资源。
  */
 public class Main {
     public static void main(String[] args) {
